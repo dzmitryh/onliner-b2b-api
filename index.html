@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Onliner-b2b-api by onlinerby</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Onliner-b2b-api</h1>
+          <h2>Onliner B2B API Documentation</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/onlinerby/onliner-b2b-api/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/onlinerby/onliner-b2b-api/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/onlinerby/onliner-b2b-api" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="onliner-b2b-api" class="anchor" href="#onliner-b2b-api"><span class="octicon octicon-link"></span></a>Onliner B2B API</h1>
+
+<p>Адрес API – <a href="https://b2bapi.onliner.by">https://b2bapi.onliner.by</a></p>
+
+<p>Ресурс доступен только по протоколу HTTPS.</p>
+
+<ul>
+<li><a href="docs/application.md">Регистрация приложения</a></li>
+<li><a href="docs/oauth20.md">Получение доступа к API</a></li>
+</ul><h2>
+<a name="%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD" class="anchor" href="#%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD"><span class="octicon octicon-link"></span></a>Магазин</h2>
+
+<ul>
+<li>
+<a href="docs/shop/info.md">GET /shop</a>
+
+<ul>
+<li>Информация о текущем магазине</li>
+</ul>
+</li>
+<li>
+<a href="docs/shop/edit.md">PUT /shop</a>
+
+<ul>
+<li>Редактирование параметров магазина</li>
+</ul>
+</li>
+</ul><h2>
+<a name="%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%BE%D0%B9-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8" class="anchor" href="#%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%BE%D0%B9-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8"><span class="octicon octicon-link"></span></a>Получение справочной информации</h2>
+
+<ul>
+<li>
+<a href="docs/catalog/sections.md">GET /sections</a>
+
+<ul>
+<li>Возвращает полный список активных разделов каталога</li>
+</ul>
+</li>
+<li>
+<a href="docs/catalog/section.md">GET /sections/{sectionId}</a>
+
+<ul>
+<li>Возвращает параметры указанного раздела</li>
+</ul>
+</li>
+<li>
+<a href="docs/catalog/manufacturers.md">GET /sections/{sectionId}/manufacturers</a>
+
+<ul>
+<li>Возвращает список производителей в указанном разделе</li>
+</ul>
+</li>
+<li>
+<a href="docs/catalog.products.md">GET /sections/{sectionId}/manufacturers/{manufacturerId}/products</a>
+
+<ul>
+<li>Возвращает список товаров указанного производителя</li>
+</ul>
+</li>
+<li>
+<a href="docs/price-lists/positions.md">GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions</a>
+
+<ul>
+<li>Возвращает список позиций указанного товара<br>
+</li>
+</ul>
+</li>
+</ul><h2>
+<a name="%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2-%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0" class="anchor" href="#%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2-%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0"><span class="octicon octicon-link"></span></a>Подключение и отключение разделов каталога</h2>
+
+<ul>
+<li>
+<a href="docs/shop/section/add.md">POST /sections/{id}</a>
+
+<ul>
+<li>Подключает раздел к магазину</li>
+</ul>
+</li>
+<li>
+<a href="docs/shop/section/remove.md">DELETE /sections/{id}</a>
+
+<ul>
+<li>Отключает раздел от магазина</li>
+</ul>
+</li>
+</ul><h2>
+<a name="%D0%9F%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82" class="anchor" href="#%D0%9F%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82"><span class="octicon octicon-link"></span></a>Прайс-лист</h2>
+
+<h3>
+<a name="%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82" class="anchor" href="#%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82"><span class="octicon octicon-link"></span></a>Импорт</h3>
+
+<p><a href="docs/price-lists/import/info.md">Общая информация по импорту прайс листов</a></p>
+
+<ul>
+<li>
+<a href="docs/price-lists/import/update.md">PATCH /pricelists</a>
+
+<ul>
+<li>Добавление и редактирование позиций</li>
+</ul>
+</li>
+<li>
+<a href="docs/import/price-lists/import/replace.md">PUT /pricelists</a>
+
+<ul>
+<li>Загрузка нового прайс-листа</li>
+</ul>
+</li>
+</ul><h3>
+<a name="%D0%9E%D1%82%D1%87%D0%B5%D1%82-%D0%BF%D0%BE-%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82%D1%83" class="anchor" href="#%D0%9E%D1%82%D1%87%D0%B5%D1%82-%D0%BF%D0%BE-%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82%D1%83"><span class="octicon octicon-link"></span></a>Отчет по импорту</h3>
+
+<ul>
+<li>
+<a href="docs/price-lists/import/status.md">GET /pricelists/{pricelistId}/status</a>
+
+<ul>
+<li>Возвращает статус обработки прайс-листа</li>
+</ul>
+</li>
+<li>
+<a href="docs/price-lists/report.md">GET /pricelists/{pricelistId}/report</a>
+
+<ul>
+<li>Возвращает список ошибок, возникших во время импорта</li>
+</ul>
+</li>
+</ul><h3>
+<a name="%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0" class="anchor" href="#%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0"><span class="octicon octicon-link"></span></a>Удаление позиции товара</h3>
+
+<p><a href="docs/price-lists/delete/info.md">Общая информация по удалению позиций из прайс листов</a></p>
+
+<ul>
+<li>
+<a href="docs/price-lists/delete/all.md">DELETE /pricelists/all</a>
+
+<ul>
+<li>Удаляет все позиции магацина</li>
+</ul>
+</li>
+<li>
+<a href="docs/price-lists/delete/one.md">DELETE /pricelists/{positionId}</a>
+
+<ul>
+<li>Удаляет конкретную позицию товара</li>
+</ul>
+</li>
+<li>
+<a href="docs/price-lists/delete/list.md">DELETE /priceists</a>
+
+<ul>
+<li>При наличии списка "list" удаляет позиции товаров, ID которых перечисланы в списке</li>
+</ul>
+</li>
+</ul><h3>
+<a name="%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" class="anchor" href="#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8"><span class="octicon octicon-link"></span></a>Обновление актуальности</h3>
+
+<ul>
+<li>
+<a href="docs/price-lists/renew.md">PUT /pricelist/{id}/renew</a>
+
+<ul>
+<li>Обновляет актуальность указанной или всех позиций магазина</li>
+</ul>
+</li>
+<li>
+<a href="docs/price-lists/renew-list.md">PUT /pricelist/renew</a>
+
+<ul>
+<li>Обновляет актуальность указанных позиций</li>
+</ul>
+</li>
+</ul><h3>
+<a name="%D0%AD%D0%BA%D1%81%D0%BF%D0%BE%D1%80%D1%82-%D0%BF%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2-%D0%B8-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B9-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2" class="anchor" href="#%D0%AD%D0%BA%D1%81%D0%BF%D0%BE%D1%80%D1%82-%D0%BF%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2-%D0%B8-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B9-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2"><span class="octicon octicon-link"></span></a>Экспорт прайс листов и позиций товаров</h3>
+
+<ul>
+<li>
+<a href="docs/price-lists/export/positions.md">GET /positions</a>
+
+<ul>
+<li>Возвращает полный список позиций магазина</li>
+</ul>
+</li>
+<li>
+<a href="docs/price-lists/export/sections.md">GET /sections/{sectionId}/positions</a>
+
+<ul>
+<li>Возвращает список позиций для указанного раздела</li>
+</ul>
+</li>
+<li>
+<a href="docs/eprice-lists/export/manufacturers.md">GET /sections/{sectionId}/manufacturers/{manufacturerId}/positions</a>
+
+<ul>
+<li>Возвращает список позиций для указанного производителя</li>
+</ul>
+</li>
+<li>
+<a href="docs/price-lists/export/products.md">GET /sections/{sectionId}/manufacturers/{manufacturerId}/products/{productId}/positions</a>
+
+<ul>
+<li>Возвращает список позиций для указанного товара</li>
+</ul>
+</li>
+</ul>
+        </section>
+
+        <footer>
+          Onliner-b2b-api is maintained by <a href="https://github.com/onlinerby">onlinerby</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
